@@ -156,6 +156,7 @@ footer>p{
     font-size: xx-large;
 }
 
+/* 
 
 .projects-box{
     margin: 7em;
@@ -171,15 +172,133 @@ footer>p{
 }
 
 .project img:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1);
 }
 
 .p3 img, .p4 img{
     height: 300px;  
     width: auto;  
+} 
+
+*/
+
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10%;
 }
+
+.carousel-images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 600px;
+    cursor: pointer;
+}
+
+.to-do-img, .tic-tac-toe-img{
+    max-width: 550px;  
+}
+
+.carousel-track-container{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 400ms ease-in;
+}
+
+.carousel-slide{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-btn--left{
+    left: -16px;
+}
+
+.carousel-btn--right{
+    right: -40px;
+}
+.carousel-btn img{
+    width: 12px;
+}
+
+
+.carousel-nav{
+    /* background: pink; */
+    margin-top: 5%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0, .3);
+    margin: 0 10px;
+}
+
+.carousel-indicator.current-slide{
+    background-color: rgb(0, 0, 0, .75);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.credits-container{
+    border: 1px solid #11999E;
+    margin: 0 auto 0 auto;
+    margin-top: 2em;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.credits{
+    text-decoration: none;
+    color: #11999E;
+}
+
+.credits-title{
+    margin-top: 0;
+}
+
 
 /* SMALL DEVICES */
 @media only screen and (max-width: 1200px) {

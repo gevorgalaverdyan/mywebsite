@@ -66,11 +66,11 @@
             <hr>
             <h2>Projects</h2>
 
-            <div class="projects-box">
+            <!-- <div class="projects-box">
 
                 <div class="project p1">
                     <img src="./img/projects/grocery-website/grocery-website-main.png" alt="grocery-website" onclick='window.location.href = "http://homeymarket.epizy.com/webpages/"'>
-                    <!-- fully functional grocery website -->
+                    
                 </div>
 
                 <div class="project p2">
@@ -86,7 +86,48 @@
                 </div>
 
                 
+            </div> -->
+
+
+            <div class="carousel">
+                <button id="left" class="carousel-btn carousel-btn--left">
+                    <img src="./img/left-arrow.png" alt="back">
+                </button>
+
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- slide -->
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-images" src="./img/projects/grocery-website/grocery-website-main.png" alt="grocery-website" onclick='window.location.href = "http://homeymarket.epizy.com/webpages/"'>
+                        </li>
+                        <!-- slide -->
+                        <li class="carousel-slide">
+                            <img class="carousel-images tic-tac-toe-img" src="./img/projects/tic-tac-toe.png" alt="tic tac toe" onclick='window.location.href = "https://gevorgalaverdyan.github.io/Tic-Tac-Toe/"'>
+                        </li>
+                        <!-- slide -->
+                        <li class="carousel-slide">
+                            <img class="carousel-images" src="./img/projects/searchbar.png" alt="searchbar" onclick='window.location.href = "https://gevorgalaverdyan.github.io/searchbar.github.io/"'>
+                        </li>
+                        <!-- slide -->
+                        <li class="carousel-slide">
+                            <img class="carousel-images to-do-img" src="./img/projects/to-do.png" alt="to-do" onclick='window.location.href = "https://gevorgalaverdyan.github.io/To-Do-App/"'>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <button id="right" class="carousel-btn carousel-btn--right">
+                    <img src="./img/right-arrow.png" alt="forward">
+                </button>
+
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
             </div>
+
 
             <button id="projects-btn" class="btn">My Projects</button>
         </main>
@@ -105,8 +146,15 @@
                 <i class="fa fa-github-square"></i>
             </a>
             <p>© All Rights Reserved - Gevorg Alverdyan.</p>
+
+            <div class="credits-container">
+                <h3 class="credits-title">Credits & Attributions</h3>
+                <a class ="credits" href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Roundicons - Flaticon</a>
+                <br>
+                <a class ="credits"href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Roundicons - Flaticon</a>
+            </div>
         </footer>
 
-        <script src="./main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
