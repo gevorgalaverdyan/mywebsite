@@ -28,38 +28,67 @@
             </div>
 
             <hr>
-
+            <h2>My Skills</h2>
             <div class="skills">
-                <h2>My Skills</h2>
-                <div class="skill-row">
+                
+                <div class="skill-row teamwork-skill">
                     <img class="skill-img teamwork-img" src="./img/diversity.png" alt="teamwork">
-                    <h3>Teamwork</h3>
-                    <p>I am an actively contributing team member, and I firmly believe that collaborative problem-solving leads to better outcomes.</p>
+                    <div class="team-description">
+                        <h3>Teamwork</h3>
+                        <p>I am an actively contributing team member, and I firmly believe that collaborative problem-solving leads to better outcomes.</p>
+                    </div>
+                    
                 </div>
 
-                <div class="skill-row">
+                <div class="skill-row coding-skill">
                     <img class="skill-img coding-img" src="./img/programming.svg" alt="programming">
-                    <h3>Computer programming and coding</h3>
-                    <p>My academic experience has provided me with the necessary tools to become an effective Software Engineer. 
-                    <br>
-                    Areas of experience:
-                        <ul id="programming-languages">
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>GIT</li>
-                            <li>SQLite</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </p>
+                    <div class="coding-description">
+                        <h3>Computer programming and coding</h3>
+                        <p>My academic experience has provided me with the necessary tools to become an effective Software Engineer. 
+                        <br>
+                        Areas of experience:
+                            <ul id="programming-languages">
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>GIT</li>
+                                <li>SQLite</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
 
             <hr>
-            
-            <button class="btn">My Portfolio Website</button>
+            <h2>Projects</h2>
+
+            <div class="projects-box">
+
+                <div class="project p1">
+                    <img src="./img/projects/grocery-website/grocery-website-main.png" alt="grocery-website" onclick='window.location.href = "http://homeymarket.epizy.com/webpages/"'>
+                    <!-- fully functional grocery website -->
+                </div>
+
+                <div class="project p2">
+                    <img src="./img/projects/searchbar.png" alt="searchbar" onclick='window.location.href = "https://gevorgalaverdyan.github.io/searchbar.github.io/"'>
+                </div>
+
+                <div class="project p3">
+                    <img src="./img/projects/tic-tac-toe.png" alt="tic-tac-toe" onclick='window.location.href = "https://gevorgalaverdyan.github.io/Tic-Tac-Toe/"'>
+                </div>
+
+                <div class="project p4">
+                    <img src="./img/projects/to-do.png" alt="to-do" onclick='window.location.href = "https://gevorgalaverdyan.github.io/To-Do-App/"'>
+                </div>
+
+                
+            </div>
+
+            <button id="projects-btn" class="btn">My Projects</button>
         </main>
 
 
@@ -77,5 +106,7 @@
             </a>
             <p>© All Rights Reserved - Gevorg Alverdyan.</p>
         </footer>
+
+        <script src="./main.js"></script>
     </body>
 </html>
