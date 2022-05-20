@@ -325,6 +325,10 @@ header{
         margin-right: auto;
     }
 
+    .service{
+        margin: 1em;
+    }
+
     .service + .services{
         margin-left: 2em;
     }
